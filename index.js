@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 8000;
 
 dotenv.config();
 
-mongoose.connect(process.env.MONGO_URL,{
+mongoose.connect(`${process.env.MONGO_URL}`,{
 })
 .then(()=> console.log("connected to moongodb!"))
 .catch((err)=>console.log(err));
